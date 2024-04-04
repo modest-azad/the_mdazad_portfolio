@@ -5,19 +5,17 @@ import { useState } from "react";
 const data = [
     {
         tittle: "TechKitiz UI",
-        subtittle: "designing",
-        link: "https://techkshitiz.onrender.com/",
-        image: "/thumbnails/techkshitiz_interface.jpg",
+        subtittle: "development",
+        link: "https://the-mdazad.vercel.app/",
+        image: "/thumbnails/portfolio.jpg",
     },
     {
         tittle: "TechKitiz UI",
-        subtittle: "development",
-        link: "https://the-mdazad.vercel.app/",
-        image: "/Graphic.png",
+        subtittle: "designing",
+        link: "https://techkshitiz.onrender.com/",
+        image: "/thumbnails/techkshitiz.jpg",
     },
-    
-    
-    
+        
 ]
 
 export default function Project() {
@@ -30,11 +28,11 @@ export default function Project() {
                 <h2 className="text-2xl font-bold">My Projects</h2>
             </span>
 
-            <span className="cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 my-6">
+            <span className="cards  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 my-6">
                 {
                     data.map((currentData) => {
                         return (
-                            <div key={1} className="transition duration-300 bg-gray-100 rounded-lg overflow-hidden aspect-[4/3] w-full">
+                            <div key={1} className="shadow-lg transition duration-300 bg-gray-100 rounded-lg overflow-hidden aspect-[4/3] w-full">
                                 <div className="relative h-full bg-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
                                     <div className=" absolute inset-0 bg-gray-900 bg-opacity-80 flex items-center justify-center flex-col opacity-0 hover:opacity-100 transition duration-300">
                                         <h2 className="text-white text-lg font-semibold">{currentData.tittle}</h2>

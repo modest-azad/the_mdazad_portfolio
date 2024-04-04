@@ -25,11 +25,11 @@ export default function Homepage() {
         <div className="hidden lg:flex justify-center ">
           {" "}
           <Image
-            className="w-full mx-16"
+            className="w-full mx-20"
             src="/HeroImage.png"
             alt="Image"
-            width={1000}
-            height={1000}
+            width={900}
+            height={900}
           />
         </div>
       </div>
@@ -50,17 +50,17 @@ export default function Homepage() {
        
         <span className="cards grid  justify-center items-end  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-6">
           <div  className="flex items-center flex-col">
-            <Image className="grayscale hover:grayscale-0 transition duration-300" src="/Graphic_designing.png" alt="image" width={200} height={200}/>
+            <Image src="/Graphic_designing.png" alt="image" width={200} height={200}/>
             <h3>Graphic Designing</h3>
             <p className="text-sm text-center">Crafting visually striking designs that effectively communicate messages and captivate audiences, showcasing expertise and creativity.</p>
           </div>
           <div className="flex items-center flex-col">
-            <Image className="grayscale hover:grayscale-0 transition duration-300" src="/UIUX.png" alt="image" width={250} height={250}/>
+            <Image src="/UIUX.png" alt="image" width={250} height={250}/>
             <h3>UI/UX Designing</h3>
             <p className="text-sm text-center">Creating intuitive and visually engaging user interfaces, prioritizing user experience to deliver seamless and delightful interactions.</p>
           </div>
           <div className="flex items-center flex-col">
-            <Image className="grayscale hover:grayscale-0 transition duration-300" src="/development.png" alt="image" width={200} height={200}/>
+            <Image src="/development.png" alt="image" width={200} height={200}/>
             <h3>Web Development</h3>
             <p className="text-sm text-center">Building responsive, user-friendly websites with clean code and innovative design, enhancing digital experiences and functionality for seamless interaction.</p>
           </div>
