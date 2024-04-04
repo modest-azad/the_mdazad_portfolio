@@ -28,8 +28,8 @@ export default function Homepage() {
             className="w-full mx-16"
             src="/HeroImage.png"
             alt="Image"
-            width={300}
-            height={300}
+            width={1000}
+            height={1000}
           />
         </div>
       </div>
@@ -76,18 +76,10 @@ export default function Homepage() {
         </span>
 
         <span className="cards grid  justify-center items-middle  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
-          <div  className="flex items-center flex-col">
            <a href="https://technical-website-1-0.onrender.com/" target="_blank">
              <Image className="w-full "  src="/TechKshitizLogo.png" alt="image" width={300} height={50}/>
-            </a>
-            
-          </div>
-          <div className="flex items-center flex-col">
-            <Image className="w-full"  src="/TechKshitizLogo.png" alt="image" width={300} height={50}/>
-          </div>
-          <div className="flex items-center flex-col">
-            <Image className="w-full"  src="/TechKshitizLogo.png" alt="image" width={300} height={50}/>
-          </div>
+            </a>         
+          
         </span>
       </div>
     </>
