@@ -1,8 +1,10 @@
+import './TextGradient.css'; // Import CSS file where animation is defined
+
 type TextGradientProps = {
-    text: "@the_mdazad"
-    from?: "from-orange-700"
-    via?: "via-blue-500"
-    to?: "to-green-400"
+    text: string
+    from?: string
+    via?: string
+    to?: string
   }
   
   export default function TextGradient(props: TextGradientProps) {
@@ -12,7 +14,7 @@ type TextGradientProps = {
   
     return (
       <span
-        className={`bg-gradient-to-r ${from} ${via} ${to} text-transparent bg-clip-text bg-300% animate-gradient`}
+        className={`text-gradient bg-gradient-to-r ${from} ${via} ${to} text-transparent bg-clip-text bg-300% animate-gradient`}
       >
         {props.text}
       </span>

@@ -35,7 +35,7 @@ export default function Homepage() {
       </div>
 
       <div className="flex justify-center mt-[-64px] mb-4">
-      <Image  src="/scrollup.gif" alt="mouse" width={50} height={50}/>
+      <Image  src="/mouse.png" alt="mouse" width={50} height={50}/>
       </div>
         
      <Project/>
@@ -78,15 +78,15 @@ export default function Homepage() {
         <span className="cards grid  justify-center items-middle  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
           <div  className="flex items-center flex-col">
            <a href="https://technical-website-1-0.onrender.com/" target="_blank">
-             <Image className="w-full "  src="/TechKshitiz.png" alt="image" width={300} height={50}/>
+             <Image className="w-full "  src="/TechKshitizLogo.png" alt="image" width={300} height={50}/>
             </a>
             
           </div>
           <div className="flex items-center flex-col">
-            <Image className="w-full"  src="/TechKshitiz.png" alt="image" width={300} height={50}/>
+            <Image className="w-full"  src="/TechKshitizLogo.png" alt="image" width={300} height={50}/>
           </div>
           <div className="flex items-center flex-col">
-            <Image className="w-full"  src="/TechKshitiz.png" alt="image" width={300} height={50}/>
+            <Image className="w-full"  src="/TechKshitizLogo.png" alt="image" width={300} height={50}/>
           </div>
         </span>
       </div>
