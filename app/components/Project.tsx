@@ -4,16 +4,25 @@ import { useState } from "react";
 
 const data = [
     {
-        tittle: "TechKitiz UI",
+        tittle: "Personal Portfolio",
         subtittle: "development",
         link: "https://the-mdazad.vercel.app/",
+        source:"https://github.com/modest-azad/the_mdazad_portfolio/",
         image: "/thumbnails/portfolio.jpg",
     },
     {
         tittle: "TechKitiz UI",
         subtittle: "designing",
         link: "https://techkshitiz.onrender.com/",
+        source:"#",
         image: "/thumbnails/techkshitiz.jpg",
+    },
+    {
+        tittle: "JavaScript Game",
+        subtittle: "development",
+        link: "https://modest-azad.github.io/RockPaperScissorsGame/",
+        source:"https://github.com/modest-azad/RockPaperScissorsGame",
+        image: "/thumbnails/game1.jpg",
     },
         
 ]
@@ -37,10 +46,10 @@ export default function Project() {
                                     <div className=" absolute inset-0 bg-gray-900 bg-opacity-80 flex items-center justify-center flex-col opacity-0 hover:opacity-100 transition duration-300">
                                         <h2 className="text-white text-lg font-semibold">{currentData.tittle}</h2>
                                         <span className="flex">
-                                        <a className="text-white text-sm m-2" href="#">
+                                        <a className="text-white text-sm m-2" href={currentData.link} target="_blank">
                                             <Image src="/icons/link.png" alt="icon" width={30} height={30}/>
                                         </a>                                        
-                                        <a className="text-white  text-sm m-2" href="#">
+                                        <a className="text-white  text-sm m-2" href={currentData.source} target="_blank">
                                             <Image src={(currentData.subtittle === "development")? "/icons/github.png" : "/icons/figma.png"} alt="icon" width={30} height={30}/>
                                         </a>                                        
                                         </span>
