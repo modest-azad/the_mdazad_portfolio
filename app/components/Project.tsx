@@ -6,20 +6,16 @@ const data = [
     {
         tittle: "TechKitiz UI",
         subtittle: "designing",
-        link: "https://the-mdazad.vercel.app/",
-        image: "/Graphic.png",
+        link: "https://techkshitiz.onrender.com/",
+        image: "/thumbnails/techkshitiz_interface.jpg",
     },
     {
         tittle: "TechKitiz UI",
         subtittle: "development",
-        link: "https://techkshitiz.onrender.com/",
-        image: "/Graphic.png",
-    },
-    {
-        tittle: "TechKitiz UI",
         link: "https://the-mdazad.vercel.app/",
         image: "/Graphic.png",
     },
+    
     
     
 ]
