@@ -1,6 +1,6 @@
 import Image from "next/image";
-import project from "./components/Project";
-import Project from "./components/Project";
+import project from "./Project/page";
+import Project from "./Project/page";
 
 export default function Homepage() {
   return (

@@ -17,7 +17,7 @@ const Header = () => {
         <div className="flex flex-wrap lg:flex-nowrap justify-between items-center mx-auto">
           <a href="https://instagram.com/@the_mdazad" className="flex items-center">
             <span className="self-center font-semibold whitespace-nowrap ">
-              <TextGradient text='@the_mdazad'/>
+              <Link href="./"><TextGradient text='Portfolio'/></Link>
               </span>
           </a>
           <div className="flex items-center lg:order-2">
@@ -43,7 +43,7 @@ const Header = () => {
                 <a href="#" className="block py-2 pr-4 pl-3 text-gray-700 hover:text-blue-600  lg:hover:text-primary-700 lg:p-0 ">About</a>
               </li>
               <li>
-                <Link href="./components/Project">Project</Link>
+                <Link href="./Project">Project</Link>
                 {/* <a href="#" className="block py-2 pr-4 pl-3 text-gray-700 hover:text-blue-600  lg:hover:text-primary-700 lg:p-0 ">Projects</a> */}
               </li>
               <li>

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,9 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-brands/css/uicons-brands.css'></link>
-      <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-solid-rounded/css/uicons-solid-rounded.css'></link> */}
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Header/> {/* Navigation will show in every page*/}
+        {children}
+        <Footer/> {/* Footer will also show in every page*/}
+        </body>
     </html>
   );
 }
