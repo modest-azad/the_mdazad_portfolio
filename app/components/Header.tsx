@@ -15,11 +15,10 @@ const Header = () => {
     <header className='sticky top-0 z-10 bg-white bg-opacity-30 backdrop-blur-lg '>
       <nav className=" border-gray-200 p-[5%] py-4">
         <div className="flex flex-wrap lg:flex-nowrap justify-between items-center mx-auto">
-          <a href="https://instagram.com/@the_mdazad" className="flex items-center">
+        
             <span className="self-center font-semibold whitespace-nowrap ">
-              <Link href="./"><TextGradient text='Portfolio'/></Link>
+              <Link href="./"><TextGradient text='Portfolio' /></Link>
               </span>
-          </a>
           <div className="flex items-center lg:order-2">
             <button
               className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg  ring-2 ring-gray-200 dark:text-gray-400 hover:bg-zinc-200 "

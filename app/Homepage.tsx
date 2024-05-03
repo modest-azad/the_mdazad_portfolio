@@ -33,15 +33,11 @@ export default function Homepage() {
           />
         </div>
       </div>
-
-      <div className="flex justify-center mt-[-64px] mb-4">
-      <Image  src="/mouse.png" alt="mouse" width={50} height={50}/>
-      </div>
         
      <Project/>
 
-      {/* OUR SERVICE */}
-      <div className="p-[5%] w-full ">
+      {/* OUR SERVICE */} 
+      <div className="p-[5%] w-full  ">
         <span className="tittle text-center">
           <p className="text-sm text-zinc-600">OUR SERVICES</p>
           <h2 className="text-2xl font-bold">What I Can Do For You!</h2>
