@@ -1,9 +1,9 @@
-import Homepage from './Homepage'; // Importing the Homepage component from Homepage.tsx
+import Header from './Header'; // Importing the Homepage component from Homepage.tsx
 
 export default function Home() {
   return (
-    <main className='max-w-[1440px] m-auto'>
-      <Homepage/>
+    <main className='px-[5%] max-w-[1440px] m-auto dark'>
+      <Header/>
     </main>
   );
 }

@@ -2,7 +2,7 @@ export default function Footer() {
     return (
         <>
         <hr/>
-        <div className="bg-blue-100 text-zinc-600 p-[5%] text-sm w-full grid gap-6 grid-cols-4">
+        <div className="bg-gray-100 text-zinc-600 p-[5%] text-sm w-full grid gap-6 grid-cols-4">
             <span className="col-span-4 lg:col-span-2 flex flex-col">
                 <h3 className="font-bold my-2 text-zinc-800">GET INTOUCH</h3>
                 <p>Campus of Government Engineering College, Siwan <br /> Bihar, India</p>
