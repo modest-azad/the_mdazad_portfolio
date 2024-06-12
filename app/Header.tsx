@@ -15,7 +15,7 @@ export default function Header() {
             UI Designer <br/> Front-end Developer
           </h2>
           <p className="my-5 text-gray-500">
-            I&apos;m a passionate Designer & Developer dedicated to crafting
+          dedicated to crafting
             engaging and <br /> innovative digital experiences. Explore my work
             below and feel free to get in touch!
           </p>
@@ -35,7 +35,7 @@ export default function Header() {
         </span>
 
        
-        <span className="snap-x snap-mandatory cards flex items-end  overflow-y-hidden gap-8 my-4">
+        <span className="snap-x snap-mandatory cards flex items-end overflow-y-hidden gap-8 py-4">
           <div  className="snap-center flex items-center flex-col min-w-[300px]">
             <Image src="/Graphic_designing.png" alt="image" width={200} height={200}/>
             <h3>Graphic Designing</h3>
@@ -56,7 +56,7 @@ export default function Header() {
       </div>
 
       {/* OUR CLIENT */}
-      <div className="w-full py-6 my-12 bg-gray-100 rounded-3xl">
+      <div className="w-full py-4 my-12 bg-gray-100 rounded-3xl">
         <span className="tittle text-center">
           <p className="text-sm text-zinc-600">HAPPY CLIENTS</p>
           <h2 className="text-2xl font-bold">I Have Worked For</h2>
