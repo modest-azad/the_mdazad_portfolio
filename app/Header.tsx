@@ -31,6 +31,8 @@ export default function Header() {
         
       </center>
 
+    
+
       {/* my interest */}
       <div>
         <span className="tittle text-center">
@@ -38,8 +40,8 @@ export default function Header() {
           <h2 className="text-2xl font-bold">What I Love To Do </h2>
         </span>
 
-        <span className="snap-x snap-mandatory cards flex items-end overflow-y-hidden gap-8 py-4">
-          <div className="snap-center flex items-center flex-col min-w-[300px]">
+        <span className="snap-x snap-mandatory cards flex items-end overflow-y-hidden gap-8 p-6 ">
+          <div className="snap-center flex items-center flex-col min-w-[300px] bg-gray-100 p-4 rounded-3xl shadow-xl">
             <Image
               src="/Graphic_designing.png"
               alt="image"
@@ -52,7 +54,7 @@ export default function Header() {
               messages and captivate audiences.
             </p>
           </div>
-          <div className="snap-center flex items-center flex-col min-w-[300px]">
+          <div className="snap-center flex items-center flex-col min-w-[300px] bg-gray-100 p-4 rounded-3xl shadow-xl">
             <Image src="/UIUX.png" alt="image" width={200} height={200} />
             <h3>UI/UX Designing</h3>
             <p className="text-sm text-center text-gray-500">
@@ -61,7 +63,8 @@ export default function Header() {
               interactions.
             </p>
           </div>
-          <div className="snap-center flex items-center flex-col min-w-[300px]">
+          
+          <div className="snap-center flex items-center flex-col min-w-[300px] bg-gray-100 p-4 rounded-3xl shadow-xl ">
             <Image
               src="/development.png"
               alt="image"
