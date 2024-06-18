@@ -1,9 +1,10 @@
-import Header from './Header'; // Importing the Homepage component from Homepage.tsx
+import Header from "./Header"; // Importing the Homepage component from Homepage.tsx
+import { NextUIProvider } from "@nextui-org/react";
 
 export default function Home() {
   return (
-    <main className='px-[5%] max-w-[1440px] m-auto dark'>
-      <Header/>
+    <main >
+        <Header />
     </main>
   );
 }

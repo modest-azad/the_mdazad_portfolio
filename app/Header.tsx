@@ -1,123 +1,158 @@
-import Project from "./Project/page";
-import { Button,Image } from "@nextui-org/react";
+
+import { Button, Image } from "@nextui-org/react";
+import { FiLinkedin } from "react-icons/fi";
+import { MdWavingHand } from "react-icons/md";
+import { PiFileHtml, PiFileCss } from "react-icons/pi";
+import { SiJavascript, SiTailwindcss } from "react-icons/si";
+
+import { RiNextjsLine } from "react-icons/ri";
+import { SiNextui } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
+import { TbBrandCpp } from "react-icons/tb";
+import { SiWindows11 } from "react-icons/si";
+import {FaNodeJs,FaFigma,FaGitAlt,FaPhp,FaReact, FaLinux,FaGithub } from "react-icons/fa";
+import { SiAdobeillustrator } from "react-icons/si";
+import { SiAdobephotoshop } from "react-icons/si";
+import { SiAndroidstudio } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
 
 export default function Header() {
+
   return (
     <>
-      <center className="heroSection  grid grid-cols-1 md:grid-cols-2 px-[10%] py-16 w-full gap-6  content-center ">
-        {/*col-1 portfolio profile image  */}
-        <div className="heroImage overflow-hidden rounded-full aspect-square bg-[url('/Images/azadPhoto.jpg')] bg-contain bg-center bg-no-repeat">
-         
-        </div>
+      <HeroSection />
+      <Skills />
+      <Projects />
+      <Gallery />
+    </>
+  );
+}
 
-        {/*col-2 hero section texted contents  */}
-        <div className="heroContents self-center md:text-left ">
-          <p>
-            <i className="fi fi-rr-hand-wave"></i> I&apos;m Azad
-          </p> 
-          <h2 className="text-5xl font-bold leading-tight ">
-            UI Designer <br /> Front-end Developer
-          </h2>
-          <p className="my-5 text-gray-500">
-            Dedicated to crafting engaging and <br /> innovative digital
-            experiences. Explore my work below and feel free to get in touch!
-          </p>
-          <a className="font-bold" href="#">
-            <Button variant="flat" color="primary">
+export function HeroSection() {
+  return (
+    <>
+      <center className="heroSection px-[5%] py-16 w-full ">
+        <div className="heroContents ">
+          <h3 className="my-5 text-2xl md:text-4xl md:w-[60%] text-gray-500 leading-snug">
+            <MdWavingHand />
+            Hello, <br /> I&apos;m{" "}
+            <span className="underline outline-current">azad</span>, working as
+            an{" "}
+            <span className="underline outline-current text-blue-500">
+              ui/ux designer
+            </span>{" "}
+            and{" "}
+            <span className="underline text-blue-500">frontend developer</span>{" "}
+            since last 2 years along with the hobby of photography.
+          </h3>
+          <a className="font-bold mt-4" href="#">
+            <Button
+              variant="flat"
+              color="primary"
+              radius="full"
+              size="lg"
+              startContent={<FiLinkedin />}
+            >
               Linkedin
             </Button>
           </a>
         </div>
-        
       </center>
-
-    
-
-      {/* my interest */}
-      <div>
-        <span className="tittle text-center">
-          <p className="text-sm text-gray-500">MY INTERESTS</p>
-          <h2 className="text-2xl font-bold">What I Love To Do </h2>
+    </>
+  );
+}
+export function Skills() {
+  return (
+    <>
+      <div id="skills" className="heroSection px-[5%] py-16 w-full ">
+        <span className=" border-b-2 outline-current text-3xl text-blue-500 text-left">
+          Skills
         </span>
 
-        <span className="snap-x snap-mandatory cards flex items-end overflow-y-hidden gap-8 p-6 ">
-          <div className="snap-center flex items-center flex-col min-w-[300px] bg-gray-100 p-4 rounded-3xl shadow-xl">
-            <Image
-              src="/Graphic_designing.png"
-              alt="image"
-              width={200}
-              height={200}
-            />
-            <h3>Graphic Designing</h3>
-            <p className="text-sm text-center text-gray-500">
-              Crafting visually striking designs that effectively communicate
-              messages and captivate audiences.
-            </p>
+        <div className="skillsGrid grid grid-cols-1 lg:grid-cols-3 gap-12 my-4">
+          <div className="col1">
+            <h3 className="text-gray-500">Languages</h3>
+            <div className="SkillsIcons text-5xl grid grid-cols-5 gap-4 my-4">
+              <PiFileHtml className="hover:text-orange-700" /> <PiFileCss className="hover:text-sky-700" /> <SiJavascript className="hover:text-yellow-500" /> <FaPhp /> <SiMysql /> <TbBrandCpp />
+            </div>
           </div>
-          <div className="snap-center flex items-center flex-col min-w-[300px] bg-gray-100 p-4 rounded-3xl shadow-xl">
-            <Image src="/UIUX.png" alt="image" width={200} height={200} />
-            <h3>UI/UX Designing</h3>
-            <p className="text-sm text-center text-gray-500">
-              Creating intuitive and visually engaging user interfaces,
-              prioritizing user experience to deliver seamless and delightful
-              interactions.
-            </p>
+          <div className="col2">
+            <h3 className="text-gray-500">Libraries/Frameworks</h3>
+            <div className="SkillsIcons text-5xl grid grid-cols-5 gap-4 my-4">
+            <SiTailwindcss/> <FaNodeJs /> <FaReact /> <RiNextjsLine /> <SiNextui />
+            </div>
           </div>
-          
-          <div className="snap-center flex items-center flex-col min-w-[300px] bg-gray-100 p-4 rounded-3xl shadow-xl ">
-            <Image
-              src="/development.png"
-              alt="image"
-              width={200}
-              height={200}
-            />
-            <h3>Web Development</h3>
-            <p className="text-sm text-center text-gray-500">
-              Building responsive, user-friendly websites with clean code and
-              innovative features.
-            </p>
+          <div className="col3">
+            <h3 className="text-gray-500">Tools</h3>
+            <div className="SkillsIcons text-5xl grid grid-cols-5 gap-4 my-4">
+            <FaGitAlt /> <FaGithub /> <VscVscode className="hover:text-sky-500" /> <SiAndroidstudio className="hover:text-green-500" /> <FaFigma /> <SiAdobephotoshop className="hover:text-sky-700" /> <SiAdobeillustrator />
+            </div>
           </div>
-        </span>
+        </div>
       </div>
-
-      {/* OUR CLIENT */}
-      <div className="w-full py-4 my-12 bg-gray-100 rounded-3xl">
-        <span className="tittle text-center">
-          <p className="text-sm text-zinc-600">HAPPY CLIENTS</p>
-          <h2 className="text-2xl font-bold">I Have Worked For</h2>
+    </>
+  );
+}
+export function Projects() {
+  return (
+    <>
+      <div id="skills" className="heroSection px-[5%] py-6 w-full ">
+        <span className=" border-b-2 outline-current text-3xl text-blue-500 text-left">
+        Projects
         </span>
 
-        <span className="cards flex justify-center gap-4 my-6 ">
-          <a
-            className="max-w-[100px] bg-gray-200 rounded-full aspect-square flex content-center"
-            href="https://techkshitiz.com/"
-            target="_blank"
-          >
-            <Image
-              className="object-contain self-center"
-              src="/TechKshitizLogo.png"
-              alt="image"
-              width={300}
-              height={50}
-            />
-          </a>
-          <a
-            className="max-w-[100px] bg-gray-200 rounded-full overflow-hidden aspect-square"
-            href="https://techkshitiz.com/"
-            target="_blank"
-          >
-            <Image
-              className="object-contain"
-              src="/gecsiwan.jpg"
-              alt="image"
-              width={150}
-              height={50}
-            />
-          </a>
-        </span>
+        <div className="skillsGrid grid grid-cols-1 lg:grid-cols-4 gap-1 my-4">
+          {
+            ["/thumbnails/Designer (3).jpeg",
+              "/thumbnails/Designer.jpeg",
+              "/thumbnails/game1.jpg",
+              "/thumbnails/portfolio.jpg",
+            ].map((item, index:any)=>{
+                return(
+                  <Image key={index}
+                  src={item}
+                  alt="azad photo"
+                 
+                  className="mx-auto md:flex hidden"
+                  radius="none"
+                />
+                )
+})
+          }
+        
+        </div>
       </div>
+    </>
+  );
+}
+export function Gallery() {
+  return (
+    <>
+      <div id="skills" className="heroSection px-[5%] py-6 w-full ">
+        <span className=" border-b-2 outline-current text-3xl text-blue-500 text-left">
+        Gallery
+        </span>
 
-      <Project />
+        <div className="skillsGrid grid grid-cols-1 lg:grid-cols-4 gap-1 my-4">
+          {
+            ["/thumbnails/Designer (3).jpeg",
+              "/thumbnails/Designer.jpeg",
+            
+            ].map((item, index:any)=>{
+                return(
+                  <Image key={index}
+                  src={item}
+                  alt="azad photo"
+                 
+                  className="mx-auto md:flex hidden"
+                  radius="none"
+                />
+                )
+})
+          }
+        
+        </div>
+      </div>
     </>
   );
 }
