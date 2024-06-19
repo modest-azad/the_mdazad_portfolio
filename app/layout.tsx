@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body suppressHydrationWarning>
         <NextUIProvider className="px-[5%] max-w-[1440px] m-auto ">
           <NavigationBar/>
           {children}

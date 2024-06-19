@@ -20,7 +20,7 @@ export default function Header() {
 
   return (
     <>
-      <HeroSection />
+      <Introduction />
       <Skills />
       <Projects />
       <Gallery />
@@ -28,7 +28,7 @@ export default function Header() {
   );
 }
 
-export function HeroSection() {
+export function Introduction() {
   return (
     <>
       <center className="heroSection px-[5%] py-16 w-full ">
@@ -61,6 +61,7 @@ export function HeroSection() {
     </>
   );
 }
+
 export function Skills() {
   return (
     <>

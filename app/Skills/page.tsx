@@ -1,7 +1,9 @@
 import { Skills } from '../Header'
 
-export const SkillsPage = () => {
+ const SkillsPage = () => {
   return (
     <Skills/>
   )
 }
+export default SkillsPage;
+
