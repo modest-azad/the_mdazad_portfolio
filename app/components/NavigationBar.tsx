@@ -3,6 +3,7 @@ import ThemeSwitch from "./ThemeSwitch";
 import { Image } from "@nextui-org/react";
 import { Tabs, Tab, Card, CardBody, CardHeader } from "@nextui-org/react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 let tabs = [
   {
@@ -23,7 +24,7 @@ let tabs = [
     content:
       "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
-  
+
   {
     id: "Gallery",
     navigate: "Gallery",
@@ -38,13 +39,11 @@ let tabs = [
   },
 ];
 
-
 export default function NavigationBar() {
-  
   return (
     <div className="flex sticky top-4 z-50 justify-between items-center overflow-x-auto py-4 w-full ">
       <Image
-        src="/images/azadPhoto.jpg"  
+        src="/images/azadPhoto.jpg"
         alt="azad photo"
         width={50}
         height={50}
@@ -52,20 +51,25 @@ export default function NavigationBar() {
         radius="full"
       />
 
-      <div className="p-3 rounded-3xl" style={{
-  backdropFilter: 'blur(9.5px)',
-  WebkitBackdropFilter: 'blur(9.5px)',
-}}
+      <div
+        className="p-3 rounded-3xl"
+        style={{
+          backdropFilter: "blur(9.5px)",
+          WebkitBackdropFilter: "blur(9.5px)",
+        }}
       >
-        {tabs.map((item) =><Link
-          className="px-3  hover:border-b-2 hover:border-blue-600"
-        key={item.id} href={`/${item.navigate}`} >{item.id}</Link>)
-
-        }
+        {tabs.map((item) => (
+          <Link
+            className="px-3  hover:border-b-2 hover:border-blue-600"
+            key={item.id}
+            href={`/${item.navigate}`}
+          >
+            {item.id}
+          </Link>
+        ))}
       </div>
-  
-        <ThemeSwitch />
 
+      <ThemeSwitch />
     </div>
   );
 }
