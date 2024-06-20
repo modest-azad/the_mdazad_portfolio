@@ -1,3 +1,4 @@
+'use client'
 import { Button, Image } from "@nextui-org/react";
 import { FiLinkedin } from "react-icons/fi";
 import { MdWavingHand } from "react-icons/md";
@@ -22,9 +23,7 @@ import { SiAdobeillustrator } from "react-icons/si";
 import { SiAdobephotoshop } from "react-icons/si";
 import { SiAndroidstudio } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
-import { FcLink } from "react-icons/fc";
 import { FaGlobe } from "react-icons/fa";
-import Link from "next/link";
 
 export default function Header() {
   return (
@@ -186,7 +185,7 @@ export function Projects() {
     </>
   );
 }
-export function Gallery() {
+export function Gallery() { 
   return (
     <>
       <div id="skills" className="heroSection px-[5%] py-6 w-full ">
@@ -200,9 +199,9 @@ export function Gallery() {
               return (
                 <Image
                   key={index}
-                  src={item}
+                  src={image}
                   alt="azad photo"
-                  className="mx-auto md:flex hidden"
+                  className="mx-auto object-cover"
                   radius="none"
                 />
               );
